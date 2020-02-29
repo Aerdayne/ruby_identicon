@@ -14,6 +14,6 @@ class Identicon
   end
 
   def generate
-    digest(@username)
+    digest
   end
 end
