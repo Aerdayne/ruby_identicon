@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+require 'identicon.rb'
+
+puts 'Enter the data that is to be turned into an Identicon:'
+data = gets.chomp
+puts 'Enter the file name:'
+path = gets.chomp
+
+Identicon.new(data, path).generate

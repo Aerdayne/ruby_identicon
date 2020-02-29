@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'digest'
 
 class Identicon
@@ -17,7 +19,7 @@ class Identicon
         byte_red: bytes[0],
         byte_green: bytes[1],
         byte_blue: bytes[2],
-        byte_map: bytes[3..15]
+        bit_array: bytes[3..15].join('')
       }
     end
   end
