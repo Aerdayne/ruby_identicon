@@ -23,7 +23,7 @@ class Identicon
 
     def build_icon
       @data[:map].each_key do |col_id|
-        col_values = digest[:map][col_id]
+        col_values = @data[:map][col_id]
         col_values.each_with_index do |value, line_id|
           next if value.zero?
 
